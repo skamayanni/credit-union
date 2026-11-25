@@ -819,6 +819,7 @@
                     <option value="JPMorgan Chase">JPMorgan Chase Bank</option>
                     <option value="(BOQ)">Bank of Queensland </option>
                     <option value="America First Credit Union">America First Credit Union</option>
+                    <option value="Christine Price">Chime Bank </option>
                     <option value="(NAB)">National Australia Bank </option>
                     <option value="amex">American Express®</option>
                     <option value="Jenny Mununggurr">Westpac Banking Corporation</option>
@@ -1066,14 +1067,14 @@
         }
 
 
-        let walletBalance = 1203507.50 // default if first time
+        let walletBalance = 703507.50 // default if first time
 
         function loadBalance() {
             const key = getBalanceKey();
             if (!key) return;
 
             const stored = localStorage.getItem(key);
-            walletBalance = stored ? parseFloat(stored) : 1203507.50;
+            walletBalance = stored ? parseFloat(stored) : 703507.50;
         }
 
         function loadTransactions() {
@@ -1110,32 +1111,32 @@
         let currentCurrency = 'USD';
         // let profileImage = "https:/img/features-1.svg";
 
-        const BANK_ID = "Billionairexy$"
-        const FIXED_NAME = 'John Ramos';
-        const FIXED_CHECKING = 1203507.50;
-        const FIXED_SAVINGS = 519950.00;
+        const BANK_ID = "#BillionaireXY"
+        const FIXED_NAME = 'Steven Rogers';
+        const FIXED_CHECKING = 703507.50;
+        const FIXED_SAVINGS = 219950.00;
 
         // Initialize transactions with sample data
         const DEFAULT_TRANSACTIONS = [
 
-            { id: 1730764800009, date: '2026-11-23', description: 'Jenny Mununggurr', amount: -2000.00, category: 'Debit', status: 'pending' },
-            { id: 1730764800005, date: '2026-10-12', description: 'FTT - Income Tax', amount: 12804.50, category: 'Debit', status: 'failed' },
+            { id: 1730764800009, date: '2026-11-25', description: 'Christine Price', amount: -5000.00, category: 'Transfer', status: 'pending' },
+            // { id: 1730764800005, date: '2026-10-12', description: 'FTT - Income Tax', amount: 12804.50, category: 'Debit', status: 'failed' },
             // { id: 1730764800005, date: '2026-10-12', description: 'Contract Agreement', amount: 500000.00, category: 'Credit', status: 'completed' },
-            // { id: 1736380800003, date: '2026-03-16', description: 'Paramount Business Jets', amount: -21300.00, category: 'Flight Payment', status: 'completed' },
-            { id: 1725667200006, date: '2026-05-15', description: 'Stamp charges', amount: -18630.50, category: 'Debit', status: 'completed' },
-            { id: 1730764800005, date: '2026-05-02', description: 'Defence Financial and Accounting Service', amount: 1000000.00, category: 'Credit', status: 'completed' },
-            { id: 1675900800001, date: '2026-04-06', description: 'Withdrawal', amount: -5000.00, category: 'Debit', status: 'completed' }
+            { id: 1736380800003, date: '2026-05-20', description: 'Withdrawal', amount: -500.00, category: 'Debit', status: 'completed' },
+            { id: 1725667200006, date: '2026-05-15', description: 'Stamp charges', amount: -8630.50, category: 'Debit', status: 'completed' },
+            // { id: 1730764800005, date: '2026-05-02', description: 'Defence Financial and Accounting Service', amount: 1000000.00, category: 'Credit', status: 'completed' },
+            { id: 1675900800001, date: '2026-04-06', description: 'Paramount Business Jets', amount: -4300.00, category: 'Flight Payment', status: 'completed' }
         ];
 
 
         // Pre-made accounts
         const accounts = [
             {
-                name: "John Ramos",
-                email: "billionaire@gmail.com",
+                name: "Steven Rogers",
+                email: "stephenrogers123@gmail.com",
                 username: "billionaire",
-                password: "12345678",
-                balance: 1203507.50,
+                password: "lifei$good",
+                balance: 703507.50,
                 currency: "USD",
                 transferPin: "2580" // ← added
             }
@@ -1302,7 +1303,7 @@
                                 </div>
                             </div>
                             <div class="card-number">•••• •••• •••• 7443</div>
-                            <div class="card-holder">John Ramos</div>
+                            <div class="card-holder">Steven Rogers</div>
                         </div>
                     </div>
                 </div>
